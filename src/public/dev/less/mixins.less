@@ -1,0 +1,39 @@
+// Misc: mixins
+//==============
+.img-background(@imgurl){
+    background-image: @imgurl;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center-img-background(@imgurl,@w){
+    position: absolute;
+    margin-left:-(@w / 2);
+    left:50%;
+    background-image:@imgurl;
+    background-position: 0 0;
+    background-size:cover;
+}
+
+.repeat-y-img-background(@imgurl){
+	background-image: @imgurl;
+	background-repeat: repeat-y;
+}
+.repeat-x-img-background(@imgurl){
+	background-image: @imgurl;
+	background-repeat: repeat-x;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all /opera15+*/  
+    -moz-user-select: none;     /* Firefox all */  
+    -ms-user-select: none;      /* IE 10+ */  
+    user-select: none; 
+}

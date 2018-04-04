@@ -1,0 +1,32 @@
+# top-most EditorConfig file
+root = true
+
+# 使用Unix-style 换行符，并且每个文件以换行结束
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# 可以使用通配符匹配多个文件
+# 设置默认编码为utf-8
+[*.{js,py}]
+charset = utf-8
+
+# py文件 4 个空格缩进
+[*.py]
+indent_style = space
+indent_size = 4
+
+#  使用Tab缩进
+[*.js]
+indent_style = space
+indent_size = 2
+
+# lib目录下的js使用2个空格缩进
+[lib/**.js]
+indent_style = space
+indent_size = 2
+
+# 配置 package.json 或 .travis.yml文件 设置其为2个空格缩进
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

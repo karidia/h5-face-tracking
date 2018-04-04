@@ -1,0 +1,39 @@
+.booth {
+    width:400px;
+    background:#ccc;
+    border: 10px solid #ddd;
+    margin: 0 auto;
+}
+.track-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    video {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+    }
+    // canvas {
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+    // } 
+    img, canvas {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+    }
+    img {
+        right: 400px;
+    }
+} 
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#stats {
+    display: none;
+}
