@@ -4,8 +4,8 @@ h5摄像头人脸识别: 调用浏览器摄像头捕捉视频->canvas截屏->插
 
 ## 安装使用
 安装
-npm install
+> npm install
 生成本地代理
-node app
+> node app
 开发实时编译
-webpack -w
+> webpack -w
